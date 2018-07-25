@@ -15,5 +15,5 @@ Pour tester notre super appli, réalisez les processus suivants :
 
 ### Concepteurs ###
 
-Conçu en Ruby on Rails, ligne par ligne, par Jeremy Rak ( <a href="https://github.com/skageraz">Skageraz</a> ) et François D. ( <a href="https://github.com/TheFSilver">TheFSilver</a> ).
+Conçu en Ruby on Rails, ligne par ligne, par Jeremy R. ( <a href="https://github.com/skageraz">Skageraz</a> ) et François D. ( <a href="https://github.com/TheFSilver">TheFSilver</a> ).
 
