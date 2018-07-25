@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-def category
+def category # Cette methode permet de créer à la fois  5 catégories, 10 nouveaux users et 10 articles générés aléatoirement avec Faker
   category_1 = Category.create(name: "animaux")
   category_2 = Category.create(name: "voitures")
   category_3 = Category.create(name: "pays")
@@ -23,7 +23,7 @@ def category
     title: Faker::Book.title,
     content: Faker::ChuckNorris.fact,
     user_id: new_user.id,
-    category_id: rand(Category.first.id..Category.last.id)
+    category_id: rand(Category.first.id..Category.last.id) #permet de rattacher les articles à des catégories de maniere aléatoire sur toute la table categories
   )
   end
 end
@@ -33,7 +33,7 @@ def creation_random_comment
   new_comment = Comment.create(
     content: Faker::BackToTheFuture.quote,
     user_id: rand(User.first.id..User.last.id),
-    article_id: rand(Article.first.id..Article.last.id)
+    article_id: rand(Article.first.id..Article.last.id) # de même, permet de rattacher des commentaires aux articles de manière aléatoire
   )
   end
 end
@@ -42,7 +42,7 @@ def create_likes
 15.times do
   new_like = Like.create(
     user_id: rand(User.first.id..User.last.id),
-    article_id: rand(Article.first.id..Article.last.id)
+    article_id: rand(Article.first.id..Article.last.id) #Idem avec les likes
   )
   end
 end
